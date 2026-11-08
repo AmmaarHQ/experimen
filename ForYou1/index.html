@@ -121,7 +121,7 @@
       </div>
     </div>
     <div class="reset">
-      <button style="border-radius: 20px;padding:4px 12px;margin-top:-25px" onclick="bukaEnvelope()">Open</button>
+      <button style="border-radius: 20px;padding:4px 12px;margin-top:-25px" onclick="bukaEnvelope()">Buka</button>
     </div>
   </div>
 
@@ -131,8 +131,8 @@
     <div id="stiker2" class="stiker">
         <img id="stiker2a" src="https://htmlku.com/0/panda/bunga.gif" />
     </div>
-    <h2 id="judulPilih" style="font-size:22px;margin-bottom:30px">Haloo Sayangg! 🫣<br><br><span style="font-size:15px;font-weight:400">我想问个问题。 😆</span></h2>
-    <button id="btnLanjut" onclick="lanjutKeKalkulator()">Next 👉</button>
+    <h2 id="judulPilih" style="font-size:22px;margin-bottom:30px">Haloo Sayangg!😁<br><br><span style="font-size:15px;font-weight:400">Aku ada pertanyaan nih! 😆</span></h2>
+    <button id="btnLanjut" onclick="lanjutKeKalkulator()">Lanjut 👉</button>
   </div>
 
   <div id="hal3" class="kotak sembunyi">
@@ -141,9 +141,9 @@
     <div id="stiker3" class="stiker">
         <img id="stiker3a" src="https://htmlku.com/0/panda/ledekin.gif" />
     </div>
-    <h2 id="kalkuJdl" style="font-size:18.5px"><b style="font-size:35px">503 + 17</b><br><br><span style="font-size:18.5px">是多少呀~~~? 🤭</span></h2>
-    <p id="kalkuSubJdl" style="font-size:14.5px;margin-bottom:20px">使用这个计算器进行计算。~</p>
-    <button id="kalkuBtn" onclick="bukaKalkulator()">Start Calculating! 👀</button>       
+    <h2 id="kalkuJdl" style="font-size:18.5px"><b style="font-size:25px">Kapan Tanggal Lahirku?</b><br><br><span style="font-size:18,5px">Berapa Hayoo🤭</span></h2>
+    <p id="kalkuSubJdl" style="font-size:15px;margin-bottom:10px">Pakai kalkulator ini ya!~</p>
+    <button id="kalkuBtn" onclick="bukaKalkulator()">Jawab 👀</button>       
     
     <div class="kalkulator-container" id="kalkulator">
       <div class="display" id="display">0</div>
@@ -186,7 +186,7 @@
   </div>
   
   <div class="tombol">
-    <button style="padding:4px 12px;" onclick="balasWa()">💌 偿还</button>
+    <button style="padding:4px 12px;" onclick="balasWa()">Balas💌</button>
   </div>
 
   <div class="circ">
@@ -196,11 +196,11 @@
 
   <script>
     // Edit Kata-kata di Sini
-    const txtPertama = "<b style='font-size:16px'>哦，对了，我只是想说…… 💌</b>";
-    const txtKedua = "我今年收到的一份最大的礼物<br>这是...";
-    const txtKetiga = "<b style='font-size:20.5px'>Youuuuu 🫵</b><br><i>Hehehe~</i><br><br>非常感谢你来到我的生命中。我对你别无所求，只希望在未来的一年里，我依然能与你相伴。无论遇到什么难题，让我们一起面对，亲爱的。😍<br><br>── ᯓᡣ𐭩<br><i>You Are My Favorite Place To Come Home To—Today And Every Day.</i><br><br><b>I Love Youuu, 亲爱的</b> 🫶❤️";
+    const txtPertama = "<b style='font-size:16px'>Oh iya, Aku cuma mau bilang…… 💌</b>";
+    const txtKedua = "Keberuntungan terbesar tahun ini<br>adalah..."
+    const txtKetiga = "<b style='font-size:20.5px'>Kamuuuu!🫵</b><br><i>Hehehe~</i><br><br>Makasih yaa sayang, aku gak minta apa apa selain kita terus bersama,kedepannya apa pun tantangan yang akan datang, Ayo kita hadapi bersama, Sayang!🥰<br><br>── ᯓᡣ𐭩<br><i>You Are My Favorite Place To Come Home To—Today And Every Day.</i><br><br><b>I Love Youuu,Sayang!</b> 🫶❤️";
 
-    // Cukup deklarasikan variabelnya di paling atas script
+    // Cukup deklarasikan variabelnya di paling atas script  
 const audio = document.getElementById("linkmp3");
 
 function mulaiWeb() {
@@ -279,7 +279,7 @@ function mulaiWeb() {
     function calculate() {
       try {
         let result = eval(displayValue.replace('×','*'));
-        if (result == 520) {
+        if (result == 24) {
           document.getElementById('kalkulator').style = "position:relative;opacity:0;transform:scale(0.7);transition:all 0.6s ease";
           setTimeout(() => {
             document.getElementById('kalkulator').classList.add('sembunyi');
@@ -287,7 +287,7 @@ function mulaiWeb() {
             animateLovePercentage();
           }, 500);
         } else {
-          displayValue = 'Try Again🥺';
+          displayValue = 'Salah🥺';
           updateDisplay();
           setTimeout(() => { displayValue = '0'; updateDisplay(); }, 1500);
         }
@@ -304,7 +304,7 @@ function mulaiWeb() {
       const progressFill = document.getElementById('progressFill');
       const interval = setInterval(() => {
         percent += 2;
-        loveText.textContent = `I'm Too 😆 ${percent}% 🫶`;
+        loveText.textContent = `i lopyuu😆 ${percent}% 🫶`;
         loveText.style.opacity = percent / 100;
         loveText.style.transform = `scale(${0.6 + (percent / 100) * 0.4})`;
         progressFill.style.width = `${percent}%`;
@@ -408,9 +408,9 @@ function mulaiWeb() {
     }
 
     function balasWa() {
-      const text = "Aku udah milih ✌️ 🫢 Ilvyouuuutuuu!";
-      window.open(`weixin://`, '_blank');
-    }
+    const text = "Aku udah pilih ✌️ 🟡 Ilvyouuuutuuu!";
+    window.open(`https://api.whatsapp.com/send?phone=6289696193600&text=${encodeURIComponent(text)}`, '_blank');
+}
 
     const scrollContainer = document.getElementById("containerPesan");
     function autoScroll() { if(scrollContainer) scrollContainer.scrollTop += 10; }
